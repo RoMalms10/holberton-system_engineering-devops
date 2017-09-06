@@ -1,6 +1,6 @@
 This project helps us get familiar with using Shell commands.
 
-File 0: This script will print the absolute path of the current working directory when run.
+File 0: This script will print the absolute path of the current working directory when run.\n
 File 1: This script will display the contents list of the current directory when run.
 File 2: This script will return the user to their home directory when run.
 File 3: This script will display the current directory's contents in long format.
