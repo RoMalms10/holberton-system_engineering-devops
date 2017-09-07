@@ -1,4 +1,4 @@
-this project is to help get me familiarized with permissions and how to change them, along with ownerships of files and directories.
+This project is to help get me familiarized with permissions and how to change them, along with ownerships of files and directories.
 
 File 0: This script will change the user ID to betty.
 File 1: This script will print the effective user ID of the current user.
