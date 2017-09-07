@@ -19,3 +19,4 @@ File 15: This script will move al files begining with an uppercase letter to the
 File 16: This script will delete all files that end with ~.
 File 17: This script will create the directory /welcome/to/holberton and all of it's parents with 1 command. 
 File 18: This script will list files seperated by commas, will be alpha ordered, sorted by numericals, and directories will be appended with a backslash.
+File 19: This magic file will search filenames for the string "HOLBERTON" and rewrite the output to "Holberton data" or "Holberton" when used with mime-type.
