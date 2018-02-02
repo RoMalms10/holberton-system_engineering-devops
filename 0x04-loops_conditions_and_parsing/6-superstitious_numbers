@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script will print strings based off numbers
+COUNT="1"
+FOUR_STRING="bad luck from China"
+NINE_STRING="bad luck from Japan"
+SEVENTEEN_STRING="bad luck from Italy"
+while [ $COUNT -le 20 ]
+do
+	echo "$COUNT"
+
+	case $COUNT in
+		4)
+			echo "$FOUR_STRING"
+			;;
+		9)
+			echo "$NINE_STRING"
+			;;
+		17)
+			echo "$SEVENTEEN_STRING"
+			;;
+	esac
+	(( COUNT++ ))
+done
