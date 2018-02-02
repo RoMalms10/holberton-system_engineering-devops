@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script will print strings based on a number
+count="1"
+ELSE_STRING="Holberton School"
+FOUR_STRING="bad luck"
+EIGHT_STRING="good luck"
+while [ $count -le 10 ]
+do
+	if [ $count -eq 4 ]
+	then
+		echo "$FOUR_STRING"
+	elif [ $count -eq 8 ]
+	then
+		echo "$EIGHT_STRING"
+	else
+		echo "$ELSE_STRING"
+	fi
+	(( count++ ))
+done
