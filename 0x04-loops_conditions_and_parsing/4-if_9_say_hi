@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script will print "Holberton School" 10, except on the 9th print it wil print "Hi"
+STRING="Holberton School"
+count="1"
+ALT_STRING="Hi"
+while [ $count -le 10 ]
+do
+    if [ $count -eq 9 ]
+    then
+        echo "$ALT_STRING"
+    else
+        echo "$STRING"
+    fi
+    (( count++ ))
+done
