@@ -6,7 +6,7 @@ while [ $hours -le 12 ] || [ $minutes -ne 0 ]
 do
 	if [ $minutes -eq 0 ]
 	then
-		echo "Hours: $hours"
+		echo "Hour: $hours"
 		(( hours++ ))
 	else
 		echo "$minutes"
