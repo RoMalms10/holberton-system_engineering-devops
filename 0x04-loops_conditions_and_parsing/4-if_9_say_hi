@@ -5,11 +5,10 @@ count="1"
 ALT_STRING="Hi"
 while [ $count -le 10 ]
 do
+    echo "$STRING"
     if [ $count -eq 9 ]
     then
         echo "$ALT_STRING"
-    else
-        echo "$STRING"
     fi
     (( count++ ))
 done
