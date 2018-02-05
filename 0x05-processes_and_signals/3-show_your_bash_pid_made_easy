@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script prints information about bash without ps
+pgrep -lx bash
