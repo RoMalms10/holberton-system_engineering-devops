@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Create an RSA key pair using 4096 bits and specify output file
+ssh-keygen -b 4096 -f holberton
