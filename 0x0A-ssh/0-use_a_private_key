@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# Connect to a server spcifiying which private key to use
 ssh -i ~/.ssh/holberton ubuntu@54.161.42.211
