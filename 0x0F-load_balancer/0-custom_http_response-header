@@ -11,5 +11,5 @@ echo -e "Ceci n'est pas une page\n" > /usr/share/nginx/html/404.html
 change="#error_page 404"
 new="error_page 404"
 sudo sed -i "s/$change/$new/" /etc/nginx/sites-enabled/default
-sudo sed -t "28i\ \tadd_header X-Served_By $HOSTNAME;\n" /etc/nginx/sites-enabled/default
+sudo sed -t "28i\ \tadd_header X-Server-By $HOSTNAME;\n" /etc/nginx/sites-enabled/default
 sudo service nginx restart
