@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Configure a server to serve out a custom HTTP response
-sudo sed -t "28i\ \tadd_header X-Server-By $HOSTNAME;\n" /etc/nginx/sites-enabled/default
+sudo sed -i "28i\ \tadd_header X-Server-By $HOSTNAME;\n" /etc/nginx/sites-enabled/default
 sudo service nginx restart
