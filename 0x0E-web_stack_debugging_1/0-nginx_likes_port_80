@@ -2,4 +2,5 @@
 # Replace 2 lines in the default file to make the server listen to port 80
 sudo sed -i "21c\ \tlisten 80 default_server;" /etc/nginx/sites-enabled/default
 sudo sed -i "22c\ \tlisten [::]:80 default_server ipv6only=on;" /etc/nginx/sites-enabled/default
+sudo service nginx reload
 sudo service nginx restart
