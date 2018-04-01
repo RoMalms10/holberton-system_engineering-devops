@@ -16,7 +16,7 @@ sudo apt-get -y update
 sudo apt-get -y install haproxy=1.8\*
 
 # Change the config file before starting HAPRoxy
-sudo sed -i "$ a\listen appname 0.0.0.0:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\listen appname bind 0.0.0.0:80" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tmode http" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tstats enable" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tstats uri /haproxy?stats" /etc/haproxy/haproxy.cfg
