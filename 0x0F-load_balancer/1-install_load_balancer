@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 # Configures a Load Balancer to get HAProxy
+
+# Update the server before installing anything
 sudo apt-get -y update
-sudo apt-get -y install haproxy
+
+# Install the package that contains HAPRoxy
+# From https://haproxy.debian.net/#?distribution=Ubuntu&release=trusty&version=1.8
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-1.8
+
+#Update the new packages
+sudo apt-get -y update
+
+#Install the most recent version of HAPRoxy
+sudo apt-get -y install haproxy=1.8\*
+
+# Change the config file before starting HAPRoxy
 sudo sed -i "$ a\listen appname 0.0.0.0:80" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tmode http" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tstats enable" /etc/haproxy/haproxy.cfg
@@ -11,4 +25,6 @@ sudo sed -i "$ a\ \toption httpclose" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \toption forwardfor" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tserver 156-web-01 54.161.42.211:80 check" /etc/haproxy/haproxy.cfg
 sudo sed -i "$ a\ \tserver 156-web-02 34.228.15.80:80 check" /etc/haproxy/haproxy.cfg
+
+# Start HAProxy
 sudo service haproxy start
