@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that runs a command as the argument passed
+su - "$1" -c "whoami"
