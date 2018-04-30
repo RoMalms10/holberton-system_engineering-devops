@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 ''' This module is used for getting information from an API '''
-import csv
 import requests
 from sys import argv
 
