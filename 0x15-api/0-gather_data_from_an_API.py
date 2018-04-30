@@ -3,7 +3,7 @@
 import requests
 from sys import argv
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     count = 0
     true_dict = {}
     response1 = requests.get(
