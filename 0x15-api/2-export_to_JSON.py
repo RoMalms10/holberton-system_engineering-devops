@@ -13,8 +13,8 @@ if __name__ == "__main__":
         'https://jsonplaceholder.typicode.com/todos?userId={}'.format(argv[1]))
     tasks = response2.json()
     for obj in tasks:
-        obj.pop('id')
-        obj.pop('userId')
+        obj.pop('id', None)
+        obj.pop('userId', None)
         obj['username'] = info.get('username')
         task_list.append(obj)
     userid = argv[1]
