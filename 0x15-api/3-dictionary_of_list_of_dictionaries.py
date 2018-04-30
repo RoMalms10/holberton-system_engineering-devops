@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-''' This module is used for getting information from an API '''
+''' This module is used for getting information from an API and turning
+    all of it into JSON
+'''
 import json
 import requests
 
@@ -9,7 +11,7 @@ if __name__ == "__main__":
     response2 = requests.get('https://jsonplaceholder.typicode.com/todos')
     tasks = response2.json()
     json_dict = {}
-    task_list= []
+    task_list = []
     index = 0
     for user in info:
         userid = user.get('id')
