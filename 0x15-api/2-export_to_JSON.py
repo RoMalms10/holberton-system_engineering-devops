@@ -5,7 +5,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    task_list= []
+    task_list = []
     response1 = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1]))
     info = response1.json()
