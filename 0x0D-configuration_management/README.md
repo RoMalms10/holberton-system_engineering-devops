@@ -1,5 +1,10 @@
 # Configuration Management
 
 ## Purpose
+Learn about Configuration Management
+- Learn how to use `Puppet`
 
-## Files
+## How To Use
+```
+puppet apply [filename]
+```
