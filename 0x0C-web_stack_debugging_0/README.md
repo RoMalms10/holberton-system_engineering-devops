@@ -1,5 +1,7 @@
 # Web-stack Debugging
 
 ## Purpose
+Try and debug a faulty server
 
-## Files
+## How To Use
+`cat [filename]` to see the script used to fix the issue.
