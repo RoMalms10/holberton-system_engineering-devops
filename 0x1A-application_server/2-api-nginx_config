@@ -55,6 +55,11 @@ server {
                 include proxy_params;
                 proxy_pass http://0.0.0.0:8001/;
         }
+        
+        location /api/ {
+                include proxy_params;
+                proxy_pass http://0.0.0.0:8002/;
+        }
 
 
         # Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
