@@ -1,4 +1,4 @@
-# command to run: sudo start AirBnB_clone_v2
+# command to run: sudo start airbnb-onepage
 
 description "Gunicorn application server running AirBnB_clone_v2"
 
