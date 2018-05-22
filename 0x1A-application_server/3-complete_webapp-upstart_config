@@ -1,0 +1,12 @@
+# Start the full airbnb clone with sudo start airbnb
+description "Gunicorn application server running full airbnb clone"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+setuid ubuntu
+setgid www-data
+
+chdir /home/ubuntu/AirBnB_clone_v4
+exec gunicorn --workers 3 --bind 0.0.0.0:8003 -m 007 wsgi.wsgi_hbnb:web_dynamic.app
